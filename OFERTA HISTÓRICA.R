@@ -114,7 +114,7 @@ oferta_p15<-as.data.frame(lapply(oferta_p15,function(x) if(is.character(x))
 
 # SECCIÓN 4: UNIÓN OFERTA:
 
-oferta_p2_p15<-as.data.frame(rbind(oferta_p2_p12,oferta_p13_p14,oferta_p15))
+oferta_p2_p15<-rbind(oferta_p2_p12,oferta_p13_p14,oferta_p15)
 
 
 oferta_p2_p15$area_nombre<-recode(oferta_p2_p15$area_nombre,
